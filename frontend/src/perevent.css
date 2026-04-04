@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+:root {
+  --theme-blue: #0065C7;
+  --panel-bg: #E1EDFF; 
+  --main-font: 'Montserrat', sans-serif;
+}
+.home-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: none; 
+    min-height: 100vh;
+}
+.content-card {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 40px; 
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+}
+.back-navigation {
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: flex-start;
+}
+.back-btn {
+    background: none;
+    border: 1px solid #ccc;
+    color: #555;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    text-align: left;
+}
+.event-title {
+    color: var(--theme-blue);
+    font-weight: 700;
+    text-align: left;
+    font-size: 40px;
+    margin: 0 0 30px 0;
+    letter-spacing: -2px;
+}
+.interaction-panel {
+    background-color: var(--panel-bg);
+    padding: 40px 50px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.entry-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.entry-group label {
+    font-size: 15px;
+    color: #000;
+    white-space: nowrap;
+    font-weight: bold;
+    font-family: var(--main-font);
+}
+.entry-group input {
+    border: none;
+    background-color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 12px;
+    width: 250px;
+    color: #000;
+    font-family: var(--main-font);
+}
+.save-btn {
+    background-color: #0080ff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.qr-graphic {
+    background: white;
+    border: 2px dashed #999;
+    padding: 20px 30px;
+    border-radius: 20px;
+    font-weight: 600;
+    color: #555;
+}
+.logs-section {
+    margin-top: 20px;
+    text-align: left;
+}
+.section-title {
+    color: var(--theme-blue);
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0 0 15px 0;
+}
+.logs-table-container {
+    background-color: #e8f0fe; 
+    border-radius: 20px;
+    overflow: hidden; 
+    padding-bottom: 20px;
+}
+.logs-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--main-font);
+}
+.logs-table thead tr {
+    background-color: #92C9FF; 
+    color: black;
+}
+.logs-table th {
+    padding: 15px 10px;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+}
+.logs-table tbody tr {
+    background-color: #D9D9D9; 
+    text-align: center;
+}
+.logs-table td {
+    padding: 15px 10px;
+    font-size: 15px;
+    color: #000;
+    font-weight: 500;
+}
+.qr-container-integrated {
+    width: 250px; 
+    height: 250px; 
+}
+
+.qr-graphic-scanner {
+    background: white;
+    border: 2px dashed #999;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 120%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -25px;
+}
+#reader {
+    border: none !important;
+    width: 100% !important;
+}
+#reader video {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover; 
+    border-radius: 15px;
+}
+#reader button {
+    background-color: var(--theme-blue);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 12px;
+    margin: 5px;
+    transition: background 0.2s;
+}
+#reader button:hover {
+    background-color: #0056a3;
+}
+#reader__dashboard_section_swaplink, 
+#reader__status_span,
+#reader__header_message,
+#html5-qrcode-anchor-scan-type-change {
+    display: none !important;
+}
+#reader select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: var(--main-font);
+    margin-bottom: 10px;
+    width: 80%;
+}
+#reader__dashboard {
+    padding: 0 !important;
+}

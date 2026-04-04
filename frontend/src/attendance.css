@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+:root {
+  --bg-color: #E2EDFF;
+  --main-font: 'Montserrat', sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.home-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    padding-bottom: 30px;
+}
+.content-card {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 500px;
+    border-radius: 50px; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    padding: 40px;
+}
+.eventLabel {
+  color: #0065C7;
+  font-weight: 700;
+  text-align: left;
+  font-size: 40px;
+  letter-spacing: -2px;
+  margin: 0;
+  line-height: 0.3;
+  margin-top: 20px;
+}
+.event-list-container {
+    margin-top: 30px;
+    background-color: #e8f0fe; 
+    border-radius: 20px;
+    min-height: 400px; 
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #409fff; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.event-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: sans-serif;
+    table-layout: fixed; 
+}
+.event-table thead tr {
+    background-color: #92C9FF;
+    color: black;
+}
+.event-table th {
+    padding: 20px; 
+    font-weight: 600;
+    text-align: center;
+}
+.event-table tbody tr {
+    background-color: #D9D9D9;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.event-table tbody tr:hover {
+    background-color: #C0C0C0; 
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+}
+.event-table tbody tr:hover td {
+    color: #0065C7; 
+    text-shadow: 0.5px 0 0 #0065C7; 
+}
+.event-table td {
+    padding: 12px;
+    font-size: 15px;
+    color: #000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.search-groupA {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.search-input {
+    padding: 10px 15px;
+    border-radius: 10px 0 0 10px; 
+    border: 1px solid #ccc;
+    border-right: none; 
+    width: 300px;
+    font-family: var(--main-font);
+    outline: none;
+    background-color: #ffffff;
+    color: black;
+}
+.search-btn {
+    background-color: var(--theme-blue);
+    color: white;
+    border: 1px solid var(--theme-blue);
+    padding: 10px 20px;
+    border-radius: 0 10px 10px 0;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: var(--main-font);
+    transition: background-color 0.2s;
+}
+.search-btn:hover {
+    background-color: #0052a3;
+}

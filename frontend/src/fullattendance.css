@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+:root {
+  --theme-blue: #0065C7;
+  --main-font: 'Montserrat', sans-serif;
+  --table-bg: #D9D9D9;
+  --border-color: #bebebe;
+}
+.masterlist-title {
+  color: var(--theme-blue);
+  font-weight: 700;
+  text-align: left;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.action-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+.upload-btn {
+  background-color: #7CF97C;
+  color: var(--theme-blue);
+  border: none;
+  padding: 10px 25px;
+  border-radius: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 14px;
+  transition: transform 0.1s;
+}
+.upload-btn:hover {
+  transform: scale(1.02);
+}
+.masterlist-table-container {
+  border: 2px solid #409fff; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #E2EDFF;
+}
+.masterlist-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--main-font);
+}
+.masterlist-table thead tr {
+  background-color: #92C9FF;
+}
+.masterlist-table th {
+  padding: 15px 10px;
+  font-weight: 700;
+  font-size: 13px;
+  border: 1px solid #7fb5ed;
+  text-align: center;
+}
+.masterlist-table tbody tr {
+  background-color: var(--table-bg);
+}
+.masterlist-table td {
+  padding: 12px 8px;
+  color: black;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+  border: 1px solid var(--border-color); 
+}
+.masterlist-table td:nth-child(2) {
+  text-align: left;
+  padding-left: 15px;
+}
+.back-btn {
+  background: none;
+  border: none;
+  color: var(--theme-blue);
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-family: var(--main-font);
+}
+@media print {
+    .back-navigation, .action-bar {
+        display: none;
+    }
+    .masterlist-table-container {
+        border: none;
+        box-shadow: none;
+    }
+}
