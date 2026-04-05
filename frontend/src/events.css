@@ -150,7 +150,7 @@ body {
   gap: 15px;
 }
 .go-btn {
-  background-color: var(--accent-green);
+  background-color: white;
   border: none;
   padding: 10px 22px;
   border-radius: 20px;
