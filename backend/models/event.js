@@ -14,7 +14,7 @@ const eventSchema = new mongoose.Schema({
     attendees: [{
         student: { type: mongoose.Schema.Types.ObjectId, ref: 'Student' },
         checkInTime: { type: Date, default: Date.now },
-        method: { type: String, enum: ['QR', 'Manual'], default: 'Manual' }
+        // method: { type: String, enum: ['QR', 'Manual'], default: 'Manual' }
     }]
 }, {
     timestamps: true
